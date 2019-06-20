@@ -54,3 +54,6 @@ document.onkeyup = function(event) {
     }
 };
 
+function redButton() {
+    document.getElementById("game").style.color = "red";
+}
