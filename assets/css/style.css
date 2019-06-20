@@ -2,8 +2,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
     line-height: 34px;
-    background-color: blue;
+    
+    background-size: cover;
+    background-repeat: repeat-x;
   }
+
   
   
   
@@ -21,6 +24,8 @@ body {
     font-size: 30px;
     line-height: 49px;
     color: whitesmoke;
+    font-size: 50px;
+  font-style: italic;
   }
   
 
@@ -40,9 +45,17 @@ body {
     padding:18px;
     text-align: center;
     color: white;
-    border-color: black;
+    border-color:red;
     border-width: 5px;
   }
   
+  h1 {font-size: 75px;
+  font-style: italic;}
+
+  p {font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  }
+  
+   
   
  

@@ -12,11 +12,11 @@ var losses = 0;
 var left = 9;
 var guesses = 9;
 var guessesSoFar = [];
-var psychicLetter;
+var computerletter;
 
 
 var newGuess = function() {
-    psychicLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
+    computerletter = alphabet[Math.floor(Math.random() * alphabet.length)];
 };
 
 var TriesSoFar = function() {
@@ -24,7 +24,7 @@ var TriesSoFar = function() {
 };
 
 var guessesLeft = function() {
-    document.getElementById("left").innerHTML = "Guesses Left: " + left;
+    document.getElementById("left").innerHTML = "Tick Tock, This Many Guesses Left: " + left;
 };
 
 var newGame = function() {
@@ -42,14 +42,15 @@ document.onkeyup = function(event) {
     TriesSoFar();
     guessesLeft();
     if (left > 0) {
-        if (userGuess == psychicLetter) {
+        if (userGuess == computerletter) {
         	wins++;
-        	document.getElementById("wins").innerHTML = "Wins:" + wins;
+        	document.getElementById("wins").innerHTML = "You Got Lucky This:" + wins;
             newGame();
         }
     } else if (left == 0) {
     	losses++;
-    	document.getElementById("losses").innerHTML = "Losses:" + losses;
+    	document.getElementById("losses").innerHTML = "I Dominated This Many Times:" + losses;
         newGame();
     }
 };
+
